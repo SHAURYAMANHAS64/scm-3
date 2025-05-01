@@ -6,8 +6,7 @@ on:
 
 jobs:
   greet-new-contributor:
-    if: github.event.pull_request.author_association == 'FIRST_TIMER' || github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo "🎉 Welcome, @${{ github.actor }}! Thanks for your first contribution! 🚀"
+        run: echo "🎉 Welcome, @${{ github.actor }}! Thanks for your contribution! 🚀"
